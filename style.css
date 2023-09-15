@@ -1,0 +1,14 @@
+/* Style for the container div */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 100px); /* Adjust the number of columns and size as needed */
+    grid-gap: 10px; /* Adjust the gap between grid items as needed */
+}
+
+/* Style for the individual square divs */
+.grid-item {
+    width: 100%;
+    padding-top: 100%; /* This maintains a 1:1 aspect ratio, making it a square */
+    background-color: lightgray; /* Adjust the background color as needed */
+    border: 1px solid gray; /* Add borders for visual separation (optional) */
+}
