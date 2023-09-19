@@ -1,14 +1,23 @@
-/* Style for the container div */
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(4, 100px); /* Adjust the number of columns and size as needed */
-    grid-gap: 10px; /* Adjust the gap between grid items as needed */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
 }
 
-/* Style for the individual square divs */
+.grid-container {
+    display: inline-block;
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+    
+.grid-container > #grid {
+    display: grid;
+}
+
 .grid-item {
-    width: 100%;
-    padding-top: 100%; /* This maintains a 1:1 aspect ratio, making it a square */
-    background-color: lightgray; /* Adjust the background color as needed */
-    border: 1px solid gray; /* Add borders for visual separation (optional) */
+    background-color: #830000;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
 }
