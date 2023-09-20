@@ -1,6 +1,9 @@
 const gridButton = document.getElementById("row-count");
 const rowCountValue = document.getElementById("rowCountValue");
 
+//Selection of color
+const colorPicker = document.getElementById("color-picker");   
+
 function createGrid() {
     const rowCount = parseInt(gridButton.value);
     rowCountValue.textContent = rowCount; // Update displayed value
@@ -33,7 +36,7 @@ function createGrid() {
     const gridItems = document.querySelectorAll('.grid-item');
 
     function changeColorOnHover(event) {
-        event.target.style.backgroundColor = '#e5ff00';
+        event.target.style.backgroundColor = colorPicker.value;
     }
 
     gridItems.forEach((item) => {
