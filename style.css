@@ -12,12 +12,13 @@ body {
     transform: translate(-50%, -50%);
 }
     
-.grid-container > #grid {
+#grid {
     display: grid;
 }
 
 .grid-item {
-    background-color: #830000;
+    background-color: #ffffff;
     border: 1px solid #ccc;
     box-sizing: border-box;
 }
+
